@@ -13,7 +13,7 @@ npm i @backendsuraj/stringto-object --save
 ```javascript
 const string2object = require('@backendsuraj/stringto-object');
 
-string2object.getObject("users.details.phone",'91987***321')
+string2object.getObject("users.details.phone", '91987***321')
 // { users: { details: { phone: '91987***321' } } }
 
 //using for loop
@@ -45,8 +45,10 @@ console.log(objectHolder);
 
 ### Methods
 
-* **string2object.getObject("hello.world.reply","HI")**
-* **string2object.getObjectWithHolder(ObjectHolder = {},"hello.world.reply","HI")**
+``` javascript
+string2object.getObject("hello.world.reply", "HI")
+string2object.getObjectWithHolder(ObjectHolder = {}, "hello.world.reply", "HI")
+```
 
 ## License
 
