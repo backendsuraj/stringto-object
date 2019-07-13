@@ -1,0 +1,20 @@
+{
+  "name": "@backendsuraj/stringto-object",
+  "version": "1.0.2",
+  "description": "Make nested javascript object from string representation.",
+  "main": "index.js",
+  "keywords": [
+    "create",
+    "object",
+    "nested",
+    "string"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "author": {
+    "name": "Suraj Rana",
+    "email": "backendsuraj@gmail.com"
+  },
+  "license": "MIT"
+}
