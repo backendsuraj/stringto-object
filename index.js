@@ -6,13 +6,9 @@
  * @returns {*}
  */
 function getObjectCustom(outputHolder, objDefinition, objValue) {
-
     if (validateString(objDefinition)) {
-
         makeObjectFromString(outputHolder, objDefinition, objValue);
-
         return outputHolder;
-
     } else {
         throw new TypeError("Invalid string passed.");
     }
@@ -24,15 +20,11 @@ function getObjectCustom(outputHolder, objDefinition, objValue) {
  * @param objValue
  */
 function getObject(objDefinition, objValue) {
-
     if (validateString(objDefinition)) {
-
         let outputHolder = {};
 
         makeObjectFromString(outputHolder, objDefinition, objValue);
-
         return outputHolder;
-
     } else {
         throw new TypeError("Invalid string passed.");
     }
@@ -46,13 +38,10 @@ function getObject(objDefinition, objValue) {
  * @returns {boolean}
  */
 function validateString(string) {
-
     if (typeof string === "string") {
-
         let regex = /^(\w+.)*\w+$/;
 
         return regex.test(string);
-
     } else {
         return false;
     }
@@ -65,7 +54,6 @@ function validateString(string) {
  * @param value
  */
 function makeObjectFromString(outputHolder, definition, value) {
-
     const splitSting = definition.split('.');
     const lastKey = splitSting.pop();
     const lastObj = splitSting.reduce((obj, key) => obj[key] = obj[key] || {}, outputHolder);
