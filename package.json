@@ -1,6 +1,6 @@
 {
   "name": "@backendsuraj/stringto-object",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Make nested javascript object from string representation.",
   "main": "index.js",
   "keywords": [
@@ -11,6 +11,10 @@
   ],
   "engines": {
     "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/backendsuraj/stringto-object.git"
   },
   "author": {
     "name": "Suraj Rana",
